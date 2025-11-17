@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/auth_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: Qwe123!@#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: notstone362@gmail.com
+    password: dxux ktke bejz apgp
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.ssl.trust: smtp.gmail.com
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: # 필요시 비밀번호
+      timeout: 60000 # ms 단위
